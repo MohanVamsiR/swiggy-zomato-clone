@@ -1,0 +1,103 @@
+.restaurantView {
+  display: flex;
+  flex-direction: column;
+}
+.popular-restaurant-sort {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  height: 20%;
+}
+@media screen and (min-width: 768px) {
+  .popular-restaurant-sort {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.pop-rest-description {
+  display: flex;
+  flex-direction: column;
+}
+.popular-restaurants-heading {
+  font-weight: 700;
+  font-size: 32px;
+  color: #183b56;
+}
+.popular-restaurants-description {
+  font-weight: 500;
+  font-size: 16px;
+  color: #64748b;
+}
+.sorting {
+  display: flex;
+  align-items: center;
+}
+.select-sort {
+  width: 40%;
+  height: 25px;
+}
+@media screen and (min-width: 768px) {
+  .select-sort {
+    width: 150px;
+    margin-left: 6px;
+  }
+}
+
+.sort-icon {
+  width: 20px;
+  height: 20px;
+}
+@media screen and (min-width: 768px) {
+  .sort-icon {
+    height: 26px;
+    width: 26px;
+  }
+}
+.hrz-line {
+  width: 100%;
+}
+.restaurants-list {
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurants-list {
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-top: 0px;
+  }
+}
+.result-restaurants {
+  margin-bottom: 10px;
+  height: 60%;
+  margin-top: 0px;
+}
+
+.pagination {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+.counter-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 65px;
+}
+.decrement-button {
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+}
+.increment-button {
+  width: 25px;
+  height: 25px;
+  margin-left: 15px;
+}

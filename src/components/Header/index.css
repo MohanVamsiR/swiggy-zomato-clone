@@ -1,0 +1,148 @@
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 8%;
+  padding: 15px;
+}
+.logo-container {
+  display: flex;
+}
+.website-header-logo {
+  width: 50px;
+  align-items: center;
+}
+.logo-header-heading {
+  text-align: center;
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 18px;
+  color: #f7931e;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.header-link-options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  width: 30%;
+}
+.header-link-item {
+  font-size: 18px;
+  color: #334155;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+}
+.link-item {
+  text-decoration: none;
+}
+.Logout-button {
+  background-color: #f7931e;
+  width: 73px;
+  height: 32px;
+  border-radius: 8px;
+  border: none;
+  padding: 8px, 16px, 8px, 16px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .header-link-options {
+    diplay: none;
+  }
+  .header-link-item {
+    display: none;
+  }
+  .link-item {
+    display: none;
+  }
+  .Logout-button {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .popup {
+    display: none;
+  }
+}
+
+.btn-hamburger {
+  border: none;
+  background: none;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-hamburger {
+    display: none;
+    margin-right: 0%;
+  }
+}
+
+.modal-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 0px;
+  background: #e5e5e5;
+  width: 100vw;
+}
+
+.nav-link-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav-link {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.close-btn {
+  border: none;
+  background: none;
+  color: #000;
+}
+
+.logout-mob {
+  background-color: #f7931e;
+  width: 53px;
+  height: 30px;
+  margin-left: 10px;
+  align-self: center;
+  border-radius: 8px;
+  padding: 8px, 16px, 8px, 16px;
+  border: none;
+}
+.colored {
+  color: #f7931e;
+}
+.notColored {
+  color: #334155;
+}
+
+.cart-count-badge {
+  background-color: #bfdbfe;
+  color: #0967d2;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 50%;
+  padding-left: 5px;
+  padding-top: 2px;
+  padding-right: 5px;
+  padding-bottom: 2px;
+  margin-left: 6px;
+}
+
+@media screen and (min-width: 768px) {
+  .cart-count-badge {
+    background-color: #e6f6ff;
+  }
+}

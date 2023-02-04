@@ -1,0 +1,9 @@
+.cart-content-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.ul-cartlist {
+  width: 80%;
+  list-style-type: none;
+}
