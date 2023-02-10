@@ -23,7 +23,7 @@ const getListFromLocalStorage = () => {
 }
 
 class App extends Component {
-  state = {cartList: getListFromLocalStorage()}
+  state = {cartList: getListFromLocalStorage}
 
   addToCart = product => {
     const {cartList} = this.state
