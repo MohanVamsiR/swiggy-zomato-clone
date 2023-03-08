@@ -22,6 +22,8 @@ class CartListView extends Component {
         {value => {
           const cartListFromLocalStorage = localStorage.getItem('cartData')
           const parsedCartList = JSON.parse(cartListFromLocalStorage)
+
+          // const {cartList} = value
           return ordernow ? (
             <Payment />
           ) : (

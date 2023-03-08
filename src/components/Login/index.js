@@ -5,7 +5,12 @@ import {Redirect} from 'react-router-dom'
 import './index.css'
 
 class Login extends Component {
-  state = {username: '', password: '', showFailureMsg: false, errorMsg: ''}
+  state = {
+    username: 'rahul',
+    password: 'rahul@2021',
+    showFailureMsg: false,
+    errorMsg: '',
+  }
 
   onSubmitSuccess = jwtToken => {
     Cookies.set('jwt_token', jwtToken, {expires: 90})

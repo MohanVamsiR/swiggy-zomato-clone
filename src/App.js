@@ -13,20 +13,21 @@ import CartContext from './context/CartContext'
 
 import './App.css'
 
-const getListFromLocalStorage = () => {
-  const stringifiedCartList = localStorage.getItem('cartData')
-  const parsedCartList = JSON.parse(stringifiedCartList)
-  if (parsedCartList === null) {
-    return []
-  }
-  return parsedCartList
-}
+// const getListFromLocalStorage = () => {
+//   const stringifiedCartList = localStorage.getItem('cartData')
+//   const parsedCartList = JSON.parse(stringifiedCartList)
+//   if (parsedCartList === null) {
+//     return []
+//   }
+//   return parsedCartList
+// }
 
 class App extends Component {
-  state = {cartList: getListFromLocalStorage}
+  state = {cartList: JSON.parse(localStorage.getItem('cartData')) || []}
 
   addToCart = product => {
     const {cartList} = this.state
+    console.log(cartList)
     const productObj = cartList.find(each => each.id === product.id)
     if (productObj) {
       this.setState(prevState => ({
